@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hello — Simple Page</title>
+  <style>
+    :root { --bg: #f8fafc; --card: #ffffff; --accent: #06b6d4; }
+    html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    body{display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,var(--bg),#e6f7fb)}
+    .card{background:var(--card);padding:3rem 2rem;border-radius:16px;box-shadow:0 10px 30px rgba(6,22,33,0.08);text-align:center;min-width:260px}
+    h1{margin:0;font-size:3.2rem;line-height:1;color:#062023;letter-spacing:-0.02em}
+    p{margin:0.6rem 0 1.6rem;color:#334155}
+    .btn{display:inline-block;padding:0.6rem 1rem;border-radius:10px;border:2px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer;font-weight:600}
+    .btn:active{transform:translateY(1px)}
+    @media (max-width:420px){h1{font-size:2.2rem;padding:0 8px}}
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <h1>Hello you are dump👋</h1>
+    <p>This is a tiny website to say you that you are dummer than everybody on this planet  .</p>
+    <button class="btn" onclick="document.querySelector('h1').textContent='You are a super dump if you are reading this....by your loverly friend Vimarsh Mauli'">Make it friendlier</button>
+  </main>
+</body>
+</html>
